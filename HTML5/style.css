@@ -1,0 +1,125 @@
+/* Reset i ustawienia ogólne ciała strony (w Twoim stylu) */
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+/* Płynne skakanie do sekcji po kliknięciu linku menu */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Górny nagłówek */
+header {
+    text-align: center;
+    color: rgb(115, 5, 175);
+    font-size: 35px;
+    font-weight: normal;
+    padding: 20px 0;
+    border-bottom: 2px solid rgb(115, 5, 175);
+}
+
+.fioletowy-tekst {
+    color: rgb(115, 5, 175);
+}
+
+/* KONTENER GŁÓWNY: Tworzy szeroki układ (Flexbox) */
+.container-nawigacyjny{
+    display: flex;
+    max-width: 1400px;     /* Sprawia, że strona jest szeroka */
+    margin: 30px auto;     /* Centruje cały układ na ekranie */
+    padding: 0 20px;
+    gap: 30px;             /* Odstęp między panelem a treścią */
+}
+
+/* LEWY PANEL (Nawigacja) */
+.boczny-panel {
+    flex: 0 0 auto;        /* Nie rozciąga się */
+    width: 250px;
+    height: fit-content;   /* Tylko tyle miejsca co zawartość */
+    border: 1px solid rgb(115, 5, 175);
+    padding: 20px;
+    background-color: rgba(115, 5, 175, 0.05); /* Delikatne fioletowe tło */
+}
+
+.panel-tytul {
+    text-align: center;
+    margin-top: 0;
+    color: rgb(115, 5, 175);
+}
+
+.panel-linia {
+    border: 1px solid rgb(115, 5, 175);
+    margin: 15px 0;
+}
+
+/* Linki w menu bocznym */
+.menu-link {
+    display: block;
+    color: rgb(115, 5, 175);
+    text-decoration: none;
+    padding: 12px;
+    margin: 8px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Efekt najechania myszką na link */
+.menu-link:hover {
+    background-color: rgb(115, 5, 175);
+    color: #ffffff;
+}
+
+/* Specjalny styl dla przycisku powrotu */
+.powrot-btn {
+    background-color: #c0392b;
+    color: white;
+}
+.powrot-btn:hover {
+    background-color: #e74c3c;
+}
+
+/* PRAWY PANEL (Treść główna) */
+.tresc-glowna {
+    flex: 3;               /* Treść zajmuje 3x więcej miejsca niż panel boczny */
+    padding: 10px 20px;
+}
+
+/* Wygląd poszczególnych sekcji z wiedzą */
+.sekcja-wiedzy {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid rgba(115, 5, 175, 0.3);
+    background-color: #111111; /* Ciemne tło sekcji */
+}
+
+.sekcja-wiedzy h2 {
+    color: rgb(115, 5, 175);
+    margin-top: 0;
+}
+
+/* Wygląd znaczników <code> w tekście */
+code {
+    background-color: #222222;
+    color: #e74c3c;
+    padding: 2px 6px;
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
+/* Stopka na dole strony */
+.podstrona-footer {
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-top: 1px solid rgba(115, 5, 175, 0.2);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Kompendium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        Siema, ta strona zawiera wszystko co potrzebne z <strong class="bez_zmian">CSS</strong>
+    </header>
+
+    <div class="container-nawigacyjny">
+        
+        <nav class="boczny-panel">
+            <h3 class="panel-tytul">Elementy w tym języku</h3>
+            <hr class="panel-linia">
+            
+            <a href="#skladnia" class="menu-link">1. Składnia i Selektory</a>
+            <a href="#box-model" class="menu-link">2. Model Pudełkowy (Box Model)</a>
+            
+            <hr class="panel-linia">
+            <a href="../glowna/index.html" class="menu-link powrot-btn">← Główna Strona</a>
+        </nav>
+
+        <main class="tresc-glowna">
+            <section id="skladnia" class="sekcja-wiedzy">
+                <h2>1. Składnia i Selektory</h2>
+                <p>CSS służy do stylizowania wyglądu stron. Podstawowa reguła składa się z <strong>selektora</strong> oraz bloku deklaracji w nawiasach klamrowych, gdzie definiujemy właściwości i ich wartości.</p>
+                <p>Przykładowe zdjęcie obrazujące anatomię reguły CSS:</p>
+                <img src="../strona/HTML5/zdjecia/przyklady/zdjecie-header-przyklad.png" alt="Przykład składni CSS" class="example-photo">
+            </section>
+
+            <section id="box-model" class="sekcja-wiedzy">
+                <h2>2. Model Pudełkowy (Box Model)</h2>
+                <p>Każdy element w CSS jest traktowany jak prostokątne pudełko. Składa się z czterech warstw: <code>content</code> (zawartość), <code>padding</code> (wewnętrzny margines), <code>border</code> (obramowanie) oraz <code>margin</code> (zewnętrzny margines).</p>
+            </section>
+        </main>
+
+    </div>
+
+    <footer class="podstrona-footer">
+        Autor strony: Grzegorz Polanski
+    </footer>
+
+</body>
+</html>
